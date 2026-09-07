@@ -1,0 +1,28 @@
+{
+  "name": "classroom-aluno-mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP remoto do Google Classroom, na perspectiva do aluno",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "auth": "node auth.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.4"
+  },
+  "license": "MIT"
+}
